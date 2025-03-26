@@ -7,7 +7,8 @@
     <title>E-commerce Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-   
+
+ 
 </head>
 <body>
      <section id="header">
@@ -16,10 +17,10 @@
 
      <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="about.html">Contact</a></li>
+        <li><a href="#banners">Offers</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#product1">Categories</a></li>
+        <li><a href="#footer">Contact us</a></li>
         <li><a href="Cart.html"><i class="far fa-shopping-bag"></i></a></li>
         <div class="search-container">
           <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
@@ -35,11 +36,70 @@
          <h4>Trade-in Offer</h4>
          <h2>Elevate your style</h2>
          <h1>with Premium Men's Clothing</h1>
-         <p>save more with coupons and upyo 70% discounts</p>
-         <button>Explore Collection</button>
+         <p>save more with coupons and upto 70% discounts</p>
+         <button >Explore Collection</button>
         </div>
         <img src="model.png" alt="Model">
    </section>
+
+   <section id="banners">
+     <section id="sm-banner" class="section-p1">
+     <div class="banner-box">
+              <h2>Crazy Deals</h2>
+              <h1>Buy 3 Jeans  <br>at 2000/-</h1>
+              <p>The best classic fits is on sale at Jenius</p>
+              <button class="btn">Explore more</button>
+          </div>
+     <div class="banner-box banner-box2">
+              <h2>Seasonal sale</h2>
+              <h1>Buy 3 T-shirts<br> at 1000/- only</h1>
+              <button class="btn">Explore more</button>
+          </div>
+     </section>
+     
+     <section id="banner-3">
+          <div class="banner-box">
+               <h2>Offers</h2>
+               <h1>Buy 3 Shirts  <br>at 1600/-</h1>
+               <button class="btn">Explore more</button>
+           </div>
+           <div class="banner-box banner-box2">
+               <h1>3 Formal pants <br> at 2000/-</h1>
+     
+               <button class="btn">Explore more</button>
+           </div>
+           <div class="banner-box banner-box3">
+              
+               <h1>3 Cotton Pants <br>at 2000/-</h1>
+               <button class="btn">Explore more</button>
+           </div>
+     
+     </section>
+     </section>
+     
+     <section id="about-us">
+          <div class="about-container">
+              <div class="about-text">
+                  <h2>About Us</h2>
+                  <p>
+                      Welcome to <strong>Jeanius</strong> – your go-to destination for premium men's clothing!
+                      Whether you're looking for trendy <strong>jeans</strong>, sophisticated <strong>formal shirts</strong>,
+                      stylish <strong>t-shirts</strong>, or the perfect pair of <strong>shoes</strong>, we've got you covered.
+                      We believe fashion is more than just clothes – it's a statement.
+                  </p>
+                  <p>
+                      Our goal is to provide high-quality, stylish, and comfortable clothing at unbeatable prices.
+                      With a carefully curated collection, we make sure every piece reflects confidence, elegance, and style.
+                      Elevate your wardrobe with the best in men's fashion!
+                  </p>
+                  <p><strong>Stay stylish. Stay confident.</strong></p>
+              </div>
+              <div class="about-image">
+                  <img src="aboutus.jpg" alt="Fashion Image">
+              </div>
+          </div>
+      </section>
+      
 
    <section id="product1"  class="section-p1">
      <h2>Featured Products</h2>
@@ -200,39 +260,10 @@
     </section>
 
 
-<section id="sm-banner" class="section-p1">
-<div class="banner-box">
-         <h2>Crazy Deals</h2>
-         <h1>Buy 3 Jeans  <br>at 2000/-</h1>
-         <p>The best classic fits is on sale at Jenius</p>
-         <button class="btn">Explore more</button>
-     </div>
-<div class="banner-box banner-box2">
-         <h2>Seasonal sale</h2>
-         <h1>Buy 3 T-shirts<br> at 1000/- only</h1>
-         <button class="btn">Explore more</button>
-     </div>
-</section>
 
-<section id="banner-3">
-     <div class="banner-box">
-          <h2>Offers</h2>
-          <h1>Buy 3 Shirts  <br>at 1600/-</h1>
-          <button class="btn">Explore more</button>
-      </div>
-      <div class="banner-box banner-box2">
-          <h1>3 Formal pants <br> at 2000/-</h1>
+ 
 
-          <button class="btn">Explore more</button>
-      </div>
-      <div class="banner-box banner-box3">
-         
-          <h1>3 Cotton Pants <br>at 2000/-</h1>
-          <button class="btn">Explore more</button>
-      </div>
-
-</section>
- <footer class="section-p1">
+ <footer id="footer" class="section-p1">
      <div class="col">
          
           <h4>Contact</h4>
@@ -256,8 +287,8 @@
 
      <div class="col">
           <h4>About us</h4>
-          <a href="#">About us</a>
-          <a href="#">Home</a>
+          <a href="#aboutus">About us</a>
+          <a href="#index.html">Home</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms and conditions</a>
           <a href="#">Contact us</a>

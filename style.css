@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif ;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -60,10 +64,10 @@ body{
 }
 
 #header a img {
-    height: 85px; /* Adjust the size as needed */
+    height: 85px; 
     width: auto;
-    max-height: 100%; /* Maintain aspect ratio */
-    margin-left: 0; /* Remove negative margin */
+    max-height: 100%; 
+    margin-left: 0; 
 }
 
 #navbar{
@@ -147,15 +151,16 @@ body{
 
 #hero {
     display: flex;
-   
     align-items: flex-start;
     justify-content: space-between;
     height: 100vh;
     width: 100%;
-    background-color: #aeb9ba;
-    padding: 0 80px;
+    background-image: url(background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 80px;
     box-sizing: border-box;
-
 }
 
 #hero img{
@@ -231,9 +236,6 @@ body{
         border: 1px solid #a9a3a3;
         cursor: pointer;
         position: relative;
-        
-        /* background-color: gray; */
-
         box-shadow: 20px 20px 30px rgba(13, 10, 10, 0.2);
         border-radius: 10px;
     
@@ -265,18 +267,16 @@ body{
     }
 
     #product1 p {
-        font-size: 20px; /* Increase text size */
-        font-style: italic; /* Keep it italic */
-        color: #555; /* Dark gray color */
-        text-align: center; /* Center align */
-        margin-top: 5px; /* Adjust spacing */
-        letter-spacing: 1px; /* Slight spacing between letters */
-        
-        opacity: 0; /* Initially hidden */
-        transform: translateY(10px); /* Slightly move down */
-        animation: fadeInUp 1s ease-in-out forwards; /* Animation effect */
-        
-        transition: color 0.3s ease, letter-spacing 0.3s ease; /* Smooth hover effect */
+        font-size: 20px; 
+        font-style: italic; 
+        color: #555; 
+        text-align: center; 
+        margin-top: 5px; 
+        letter-spacing: 1px; 
+        opacity: 0; 
+        transform: translateY(10px); 
+        animation: fadeInUp 1s ease-in-out forwards; 
+        transition: color 0.3s ease, letter-spacing 0.3s ease;
     }
     
     /* Animation for fade-in effect */
@@ -291,10 +291,9 @@ body{
         }
     }
     
-    /* Hover effect */
     #product1 p:hover {
-        color: #222; /* Darker text on hover */
-        letter-spacing: 2px; /* Increase spacing */
+        color: #222; 
+        letter-spacing: 2px; 
     }
     
     
@@ -340,13 +339,7 @@ right: 10px;
         color: gold; /* Star color */
     margin-bottom: 5px;
     }
-/* 
-    .banner-container {
-        display: flex;
-        gap: 30px; /* Creates spacing between the banners */
-        /*  */
-    
-    /* Hover effect for a slight lift */
+
  
     
     .btn {
@@ -580,3 +573,74 @@ footer .follow i:hover
 footer a:hover{
     color: #088178;
 }
+
+#about-us {
+    background: white; /* Matches website background */
+    padding: 50px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Align text and image vertically */
+    justify-content: space-between; /* Space between text and image */
+    gap: 20px; /* Add spacing between elements */
+    max-width: 1200px; /* Limit the width */
+    margin: 0 auto; /* Center the section */
+    padding: 50px 20px; /* Add some padding */
+}
+
+.about-text {
+    flex: 1; /* Allow text to take up available space */
+    max-width: 50%; /* Prevent text from getting too wide */
+}
+
+.about-image img {
+    width: 100%; /* Make image responsive */
+    max-width: 500px; /* Set max width for image */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+
+#about-us h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a; /* Dark gray for heading */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+#about-us strong {
+    color: #0a0a0a; /* Stylish blue for highlighted words */
+}
+
+#about-us p:last-child {
+    font-weight: 600;
+    font-style: italic;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-us {
+        padding: 40px 15px;
+    }
+
+    #about-us h2 {
+        font-size: 2rem;
+    }
+
+    #about-us p {
+        font-size: 1rem;
+    }
+}
+
+
